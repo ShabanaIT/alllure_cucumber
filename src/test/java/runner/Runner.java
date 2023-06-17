@@ -10,10 +10,12 @@ import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-	features = "src//test//resources//Features",
-	glue = "step_definitions",
-	plugin = {"pretty", "html:test-output", "json:target/cucumber-report/cucumber.json" }
+
+		features = { "src/test/resources/Features" },
+		glue = { "step_definitions","Hooks"},
+	plugin = { "pretty", "html:target/cucumber-reports" }
 )
+
 public class Runner {
 	
 }

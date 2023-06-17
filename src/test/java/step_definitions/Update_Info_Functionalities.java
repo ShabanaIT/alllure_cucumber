@@ -78,6 +78,7 @@ public class Update_Info_Functionalities extends Base{
 	@Then("I click order Product button")
 	public void i_click_order_Product_button() {
 		click(By.xpath("//button[@type='submit']"));
+		System.out.println("Order successful");
 	}
 
 	@Then("I will see {string} home Page")

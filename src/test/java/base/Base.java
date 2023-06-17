@@ -3,7 +3,7 @@
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 public class Base {
-	public static WebDriver browser;
+	protected  static WebDriver browser;
 	
 	public static void click(By by) {
 
