@@ -22,8 +22,10 @@ public class Hooks extends Base{
 	}
 	@After
 	public void tearDown() {
-
-		browser.close();
+	if (browser!=null){
+		browser.quit();
+	}
+		//browser.close();
 	}
 
 }

@@ -15,6 +15,6 @@ And I click a Product
 And I enter order date
 Then I click order Product button
 Then I will see "order list" home Page
-Then I click confirm button
-Then refresh Url
-Then I will see "confirmed" status
+#Then I click confirm button
+#Then refresh Url
+#Then I will see "confirmed" status

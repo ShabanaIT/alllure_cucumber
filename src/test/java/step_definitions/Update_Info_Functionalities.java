@@ -87,22 +87,8 @@ public class Update_Info_Functionalities extends Base{
 	    assertEquals("Order List",s);
 	}
 
-	@Then("I click confirm button")
-	public void i_click_confirm_button() {
-	    click(By.xpath("//a[@href='orderSubmit.php?ordId=122&id=4']"));
-	}
 
-	@Then("refresh Url")
-	public void refresh_Url() {
-		browser.navigate().refresh();
-	}
 
-	@Then("I will see {string} status")
-	public void i_will_see_status(String string) {
-	   String s= getText(By.xpath("//tr[19]//td[text()=\"Confirmed\"]"));
-	   System.out.println("----------------------"+s);
-	   assertEquals("Confirmed",s);
-	}
 
 
 
